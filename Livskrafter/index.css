@@ -16,7 +16,7 @@ body {
 
 .navbar {
     display: flex;
-    background-color: rgba(67, 83, 52, 0.7);
+    background-color: blue;
     color: #FAF1E4;
     margin: 0;
     width: 100%;
