@@ -1,0 +1,265 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: antiquewhite;
+    background-image: url(backgroundimg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+@font-face {
+    font-family: MarckScript;
+    src: url(MarckScript-Regular.ttf);
+}
+
+.navbar {
+    display: flex;
+    background-color: rgba(67, 83, 52, 0.7);
+    color: #FAF1E4;
+    margin: 0;
+    width: 100%;
+    border-radius: 12px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex: 1;
+    font-family: MarckScript, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+
+}
+
+.loggnamn {
+    font-style: italic;
+    font-size: 2rem;
+    height: auto;
+    width: 33%;
+}
+
+.nav-links-list {
+    display: flex;
+    width: 29%;
+}
+
+.nav-link {
+    list-style-type: none;
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.fa {
+    padding: 15px;
+}
+
+a:hover {
+    transform: rotate(-0.01turn);
+    transition-duration: 0.5s;
+    color: red;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.framsida {
+    text-align: center;
+    background-color: #9EB384;
+    color: black;
+    border-radius: 12px;
+    padding: 16px;
+    max-width: 800px;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.front-index {
+    border: 2px solid black;
+    border-radius: 12px;
+    color: white;
+    background-color: #435334;
+}
+
+.capsule {
+    border: 3px solid black;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    background-color: rgba(67, 83, 52, 0.7);
+    color: white;
+}
+
+.capsule-coach {
+    border: 3px solid black;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    background-color: rgba(67, 83, 52, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.pic-cap {
+    border-radius: 12px;
+}
+
+.text-bold {
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.ledord {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.footer-main {
+    display: flex;
+    bottom: 0;
+    max-width: 100vw;
+    background-color: rgba(67, 83, 52, 0.7);
+    color: #FAF1E4;
+    margin: 0;
+    margin-top: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: MarckScript, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    border-radius: 12px;
+}
+
+#contact-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input[type=text],
+select,
+textarea,
+input[type=submit] {
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+button {
+    border-radius: 12px;
+    font-family: MarckScript, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    background-color: #435334;
+    color: white;
+}
+
+button:hover {
+    transition: 0.4s;
+    color: red;
+}
+
+hr.solid {
+    border-top: 3px solid darkgreen;
+    width: 100%;
+    padding: 0;
+}
+
+#before-Shop {
+    font-family: MarckScript, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.img-rund {
+    border-radius: 50%;
+    box-shadow: 6px 6px 6px #435334;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 25px;
+}
+
+.show-none {
+    display: none;
+}
+
+.gallery-pic {
+    max-width: 120px;
+    max-height: 100px;
+}
+
+.gallery-pic:hover {
+    transform: scale(3);
+    transition-duration: 0.8s;
+}
+
+#button-webshop {
+    background-color: #435334;
+    border-radius: 12px;
+    padding: 5px 12px;
+    font-family: MarckScript, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* All content fungerar som den ska på alla skärmar, många saker man lärde sig och ser att jag började i fel ände. */
+
+@media only screen and (max-width: 768px) {
+    .footer-main {
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 280px;
+    }
+
+    #gallery {
+        flex-direction: column;
+    }
+
+    .nav-links-list {
+        flex-direction: column;
+        align-content: space-evenly;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-content: space-evenly;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-rund {
+        width: 350px;
+        height: 300px;
+    }
+
+    .capsule-coach {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .pic-cap {
+        width: 250px;
+    }
+}

@@ -1,0 +1,8 @@
+Nav och foot - 
+Background: #435334
+Color: #FAF1E4
+
+Main content - 
+Background: #9EB384
+Color: Black
+
